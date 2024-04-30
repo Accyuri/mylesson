@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>菜单</title>
+  <style>
+    nav .item {
+      display: inline-block;
+      position: relative;
+      /* border: 1px solid red; */
+      margin-right: 30px;
+    }
+
+    /* nav .item > a {
+      font-size: 60px;
+    } */
+
+    nav .subnav {
+      display: none;
+      position: absolute;
+      width: 100px;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      /* border: 1px solid #000; */
+      box-shadow: 0 0 4px 0 rgba(0,0, 0, 0.2);
+      list-style: none;
+      padding: 0;
+    }
+
+    nav .subnav > li {
+      padding: 4px 10px;
+      cursor: pointer;
+    }
+
+    nav .subnav > li:hover {
+      background-color: rgba(0,0, 0, 0.2);
+    }
+
+    nav .item:hover .subnav {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+ <nav>
+  <ul>
+    <li class="item">
+      <a href="#">菜单1</a>
+      <ul class="subnav">
+        <li>子菜单1-1</li>
+        <li>子菜单1-2</li>
+        <li>子菜单1-3</li>
+      </ul>
+    </li>
+    <li class="item">
+      <a href="#">菜单2</a>
+      <ul class="subnav">
+        <li>子菜单2-1</li>
+        <li>子菜单2-2</li>
+        <li>子菜单2-3</li>
+      </ul>
+    </li>
+    <li class="item">
+      <a href="#">菜单3</a>
+    </li>
+  </ul>
+ </nav>
+</body>
+</html>
